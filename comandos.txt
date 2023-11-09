@@ -1,30 +1,27 @@
-//intalar o typescript
-npm add typescript ts-node-dev @types/node tsconfig-paths -D
+//React create 
+npx create-react-app todo --template typescript
 
-//Criar o tscofig.json
-npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true
+//Router
+npm i react-router-dom 
 
-
-//ESLint
-npm add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
-
-//Prettier
-npm add prettier -D
-npm add eslint-config-prettier@6.15.0 eslint-plugin-prettier@3.2.0 -D
-
-//EXPRESS
-npm add express cors express-async-errors
-
-//Para adiconar a parte statica ao typescript em desenv
-npm add -D @types/express @types/cors
-//
+//Redux
+npm i @reduxjs/toolkit
 
 
-//TYPE ORM
-npm add typeorm reflect-metadata pg
-npm add -D tsconfig-paths
+//bryps
+npm i bcryptjs
+
+//dotenv
+npm i dotenv
+
+//cors
+npm i cors
+
+//express
+npm i express-validator
+
+//jwt
+npm i jsonwebtoken
 
 
-//Rodar aplicação
-node build/server.js --prod
-npx run dev --desenv
+
