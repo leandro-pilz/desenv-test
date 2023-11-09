@@ -1,0 +1,43 @@
+---------- TYPESCRIPT -----------------
+//Adicionar type script
+npm add typescript ts-node-dev @types/node tsconfig-paths -D
+npm install typescript ts-node @types/node --save-dev
+
+----------------- TSCONFIG ------------------------
+npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib es6 --module commonjs --allowJs true --noImplicitAny true
+
+---------------- PRISMA ---------------
+
+//Fonte: https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgresql
+npm install prisma --save-dev
+
+//Prima cli
+npx prisma
+
+//Criar arquivo de esquema prisma
+npx prisma init
+
+//Criar migrations fonte: https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/using-prisma-migrate-typescript-postgresql
+npx prisma migrate dev --name init
+
+//Instalar o prisma client fonte: https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases/install-prisma-client-typescript-postgresql
+npm install @prisma/client
+
+
+---------------- CONFIGURAÇÕES ---------------
+//ESLint
+npm add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+//Prettier
+npm add prettier -D
+
+//Configurar o prettier
+npm add eslint-config-prettier@6.15.0 eslint-plugin-prettier@3.2.0 -D
+
+
+---------------- EXPRESS E CORS ---------------
+npm add express cors express-async-errors
+
+//Para adiconar a parte statica ao typescript em desenv
+npm add -D @types/express @types/cors
+

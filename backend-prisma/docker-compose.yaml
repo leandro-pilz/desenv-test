@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres
+    container_name: backend_prisma
+    restart: "no"
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=docker
+    volumes:
+      - .docker/dbdata:/var/lib/postgresql/data
+    ports:
+      - 5432:5432

@@ -1,0 +1,23 @@
+//intalar o typescript
+npm add typescript ts-node-dev @types/node tsconfig-paths -D
+npm install typescript ts-node @types/node --save-dev
+
+//ESLint
+npm add -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+//Prettier
+npm add prettier -D
+
+//Configurar o prettier
+npm add eslint-config-prettier@6.15.0 eslint-plugin-prettier@3.2.0 -D
+
+//EXPRESS
+npm add express cors express-async-errors
+
+//Para adiconar a parte statica ao typescript em desenv
+npm add -D @types/express @types/cors
+
+
+//Prisma
+npm install prisma --save-dev
+npx prisma init --datasource-provider sqlite
