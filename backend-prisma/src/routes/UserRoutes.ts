@@ -4,7 +4,7 @@ import {
   getUsers,
   createUsers,
   updateUsers,
-} from "../controllers/UserControllers";
+} from "../controllers/UserController";
 
 userRoutes.post("/login", (request, response) => {
   return getUsers(request, response);
